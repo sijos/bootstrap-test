@@ -1,15 +1,24 @@
 .navbar-default {
-    background-color: lightgray;
+  background-color: lightgray;
 }
 
 .nav-logo {
-    max-height: 50px;
+  max-height: 50px;
 }
 
 .h1 {
-    text-align: center;
+  text-align: center;
 }
 
-.topnav > * {
-    margin-top: 10px;
+.topnav > *, .main-content {
+  margin-top: 10px;
+}
+
+.header-row {
+  margin: 0 5px 5px 5px;
+  border-bottom: 1px solid lightgray;
+}
+
+.header-row > * {
+  padding: 0;
 }
