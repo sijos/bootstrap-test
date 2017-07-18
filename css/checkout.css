@@ -1,5 +1,17 @@
-.navbar-fixed-top {
+.navbar-default {
     background-color: lightgray;
+}
+
+.nav-logo {
+    max-height: 50px;
+}
+
+.h1 {
+    text-align: center;
+}
+
+.topnav > * {
+    margin-top: 10px;
 }
 
 .button-order {
