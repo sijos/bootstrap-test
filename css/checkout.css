@@ -22,3 +22,11 @@
 .header-row > * {
   padding: 0;
 }
+
+.card-row {
+  padding: 0 5px 0 5px;
+}
+
+input[type=radio] {
+  margin-right: 5px;
+}
