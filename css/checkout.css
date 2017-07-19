@@ -14,15 +14,20 @@
     margin-top: 10px;
 }
 
+
+.borderless td, .borderless th {
+  border: none !important;
+}
+
+.gray {
+  color: gainsboro;
+}
+
 .button-order {
   color: black;
   border: 2px solid mediumseagreen;
   width: 100%;
   margin-bottom: 0.5em;
-}
-
-.borderless td, .borderless th {
-  border: none !important;
 }
 
 .table-order-total {
