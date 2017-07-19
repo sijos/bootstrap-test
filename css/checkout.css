@@ -27,6 +27,26 @@
   padding: 0 5px 0 5px;
 }
 
-input[type=radio] {
+input[type=radio]` {
   margin-right: 5px;
+}
+.topnav > * {
+    margin-top: 10px;
+}
+
+.button-order {
+  color: black;
+  border: 2px solid mediumseagreen;
+  width: 100%;
+  margin-bottom: 0.5em;
+}
+
+.borderless td, .borderless th {
+  border: none !important;
+}
+
+.table-order-total {
+  color: darkred;
+  font-size: 1.2em;
+  font-weight: 600;
 }
