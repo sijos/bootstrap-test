@@ -25,61 +25,78 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col-md-8">
-            <div class="row">
-              <div class="col-md-1">
-                <p><strong>1</strong></p>
+              <div class="row address-toggle collapse in">
+                <div class="col-md-1">
+                  <p><strong>1</strong></p>
+                </div>
+
+                <div class="col-md-3">
+                  <p><strong>Shipping address</strong></p>
+                </div>
+
+                <div class="col-md-6">
+                  <p class="small">
+                  Nisum <br />
+                  39355 California Street #201 <br />
+                  Fremont, CA, 94538
+                  </p>
+                </div>
+
+                <div class="col-md-2">
+                  <a href=".address-toggle" data-toggle="collapse" class="small address-change">Change</a>
+                </div>
               </div>
-              <div class="col-md-3">
-                <p><strong>Shipping address</strong></p>
-              </div>
-              <div class="col-md-6">
-                <p class="small">
-                Nisum <br />
-                39355 California Street #201 <br />
-                Fremont, CA, 94538
-                </p>
-              </div>
-              <div class="col-md-2">
-                <a href="#" class="small">Change</a>
+
+              <div class="row collapse address-toggle">
+                <div class="col-md-1">
+                  <p class="text-important"><strong>1</strong></p>
+                </div>
+
+                <div class="col-md-11">
+
+                  <p class="text-important"><strong>Choose a shipping address</strong></p>
+
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <strong>Your Addresses</strong>
+                    </div>
+
+                    <div class="panel-body">
+                      <form class="form">
+                        <div class="form-group">
+                          <div class="radio small">
+                            <label>
+                              <input type="radio" name="addresses" value="39355 California Street #201, Fremont, CA, 94538 United States"> <strong>Nisum</strong> 39355 California Street #201, Fremont, CA, 94538 United States <a href="#">Edit</a>
+                            </label>
+                          </div>
+
+                          <div class="radio small">
+                            <label>
+                              <input type="radio" name="addresses" value="500 S. Kraemer Blvd, Ste. 301, Brea, CA, 92821 United States"> <strong>Nisum</strong> 500 S. Kraemer Blvd, Ste. 301, Brea, CA, 92821 United States <a href="#">Edit</a>
+                            </label>
+                          </div>
+
+                          <div class="radio small">
+                            <label>
+                              <input type="radio" name="addresses" value="71 Stevensen St, Ste. 446
+    San Francisco, CA, 94105 United States"> <strong>Nisum</strong> 71 Stevensen St, Ste. 446
+                              San Francisco, CA, 94105 United States <a href="#">Edit</a>
+                            </label>
+                          </div>
+                        </div>
+
+                        <span class="glyphicon glyphicon-plus gray"></span> <a class="small" href="#">Add a new address</a>
+                      </form>
+                    </div>
+
+                    <div class="panel-footer">
+                      <button class="btn btn-primary" data-toggle="collapse" data-target=".address-toggle">Choose this address.</button>
+                    </div>
+                  </div>
+
+                </div>
               </div>
             </div>
-            </div>
-            <!--<div class="panel panel-default">-->
-
-              <!--<div class="panel-body">-->
-              <!--<form class="form">-->
-              <!--<div class="form-group">-->
-                <!--<h4><strong>Your Addresses</strong></h4>-->
-
-                <!--<div class="radio">-->
-                <!--<label>-->
-                  <!--<input type="radio" name="addresses" value="39355 California Street #201, Fremont, CA, 94538 United States"> <strong>Nisum</strong> 39355 California Street #201, Fremont, CA, 94538 United States <a href="#">Edit</a>-->
-                <!--</label>-->
-                <!--</div>-->
-
-                <!--<div class="radio">-->
-                  <!--<label>-->
-                    <!--<input type="radio" name="addresses" value="500 S. Kraemer Blvd, Ste. 301, Brea, CA, 92821 United States"> <strong>Nisum</strong> 500 S. Kraemer Blvd, Ste. 301, Brea, CA, 92821 United States <a href="#">Edit</a>-->
-                  <!--</label>-->
-                <!--</div>-->
-
-                <!--<div class="radio">-->
-                  <!--<label>-->
-                    <!--<input type="radio" name="addresses" value="71 Stevensen St, Ste. 446-->
-<!--San Francisco, CA, 94105 United States"> <strong>Nisum</strong> 71 Stevensen St, Ste. 446-->
-                    <!--San Francisco, CA, 94105 United States <a href="#">Edit</a>-->
-                  <!--</label>-->
-                <!--</div>-->
-
-                <!--<span class="glyphicon glyphicon-plus gray"></span> <a class="small" href="#">Add a new address</a>-->
-              <!--</div>-->
-              <!--</form>-->
-              <!--</div>-->
-
-            <!--<div class="panel-footer">-->
-              <!--<button class="btn btn-primary">Choose this address.</button>-->
-            <!--</div>-->
-            <!--</div>-->
             <div class="col-md-4">
               <div class="panel panel-default">
 
@@ -108,7 +125,7 @@
                       <td class="text-right">$00.00</td>
                     </tr>
                     <tfoot>
-                    <tr class="table-order-total">
+                    <tr class="text-important">
                       <td>Order total:</td>
                       <td class="text-right">$00.00</td>
                     </tr>
@@ -120,6 +137,8 @@
                 </div>
 
               </div>
+            </div>
+          </div>
         </div>
       </div>
 
