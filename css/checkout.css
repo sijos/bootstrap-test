@@ -1,13 +1,39 @@
 .navbar-default {
-    background-color: lightgray;
+  background-color: lightgray;
 }
 
 .nav-logo {
-    max-height: 50px;
+  max-height: 50px;
 }
 
 .h1 {
-    text-align: center;
+  text-align: center;
+}
+
+.topnav > *, .main-content {
+  margin-top: 10px;
+}
+
+.header-row {
+  margin: 0 5px 5px 5px;
+  border-bottom: 1px solid lightgray;
+}
+
+.header-row > * {
+  padding: 0;
+}
+
+.card-row {
+  padding: 0 5px 0 5px;
+}
+
+input[type=radio] {
+  margin-right: 5px;
+}
+
+.row > .h5 {
+  margin: 0;
+  font-size: 15px;
 }
 
 .topnav > * {
@@ -34,4 +60,13 @@
   color: darkred;
   font-size: 1.2em;
   font-weight: 600;
+}
+
+.delivery {
+  font-size: 15px;
+  color: forestgreen;
+}
+
+.h6 {
+  font-weight: bold;
 }

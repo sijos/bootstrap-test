@@ -21,126 +21,177 @@
         </div>
       </div>
     </nav>
-      <div class="container">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-8">
-              <div class="row address-toggle collapse in">
-                <div class="col-md-1">
-                  <p><strong>1</strong></p>
-                </div>
 
-                <div class="col-md-3">
-                  <p><strong>Shipping address</strong></p>
-                </div>
-
-                <div class="col-md-6">
-                  <p class="small">
-                  Nisum <br />
-                  39355 California Street #201 <br />
-                  Fremont, CA, 94538
-                  </p>
-                </div>
-
-                <div class="col-md-2">
-                  <a href=".address-toggle" data-toggle="collapse" class="small address-change">Change</a>
-                </div>
-              </div>
-
-              <div class="row collapse address-toggle">
-                <div class="col-md-1">
-                  <p class="text-important"><strong>1</strong></p>
-                </div>
-
-                <div class="col-md-11">
-
-                  <p class="text-important"><strong>Choose a shipping address</strong></p>
-
-                  <div class="panel panel-default">
-                    <div class="panel-heading">
-                      <strong>Your Addresses</strong>
+    <div class="container main-content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="panel-group">
+              <div class="panel panel-default" id="panel1">
+                <div class="panel-heading">
+                  <div class="row">
+                    <div class="h5 col-md-3"><strong>1 &nbsp&nbsp Shipping Address</strong></div>
+                    <div class="col-md-6">
+                      <p>
+                        <strong>Nisum</strong><br />
+                        39355 California Street #201 <br />
+                        Fremont, CA, 94538
+                      </p>
                     </div>
-
-                    <div class="panel-body">
-                      <form class="form">
-                        <div class="form-group">
-                          <div class="radio small">
-                            <label>
-                              <input type="radio" name="addresses" value="39355 California Street #201, Fremont, CA, 94538 United States"> <strong>Nisum</strong> 39355 California Street #201, Fremont, CA, 94538 United States <a href="#">Edit</a>
-                            </label>
-                          </div>
-
-                          <div class="radio small">
-                            <label>
-                              <input type="radio" name="addresses" value="500 S. Kraemer Blvd, Ste. 301, Brea, CA, 92821 United States"> <strong>Nisum</strong> 500 S. Kraemer Blvd, Ste. 301, Brea, CA, 92821 United States <a href="#">Edit</a>
-                            </label>
-                          </div>
-
-                          <div class="radio small">
-                            <label>
-                              <input type="radio" name="addresses" value="71 Stevensen St, Ste. 446
-    San Francisco, CA, 94105 United States"> <strong>Nisum</strong> 71 Stevensen St, Ste. 446
-                              San Francisco, CA, 94105 United States <a href="#">Edit</a>
-                            </label>
-                          </div>
-                        </div>
-
-                        <span class="glyphicon glyphicon-plus gray"></span> <a class="small" href="#">Add a new address</a>
-                      </form>
-                    </div>
-
-                    <div class="panel-footer">
-                      <button class="btn btn-primary" data-toggle="collapse" data-target=".address-toggle">Choose this address.</button>
+                    <div class="col-md-3 text-right">
+                      <a data-toggle="collapse" data-target="#collapseOne" href="#collapseOne" class="collapsed">
+                        <small>Change</small>
+                      </a>
                     </div>
                   </div>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <div class="header-row">
+                      <span class="h4">Your addresses</span>
+                    </div>
+                    <form class="form">
+                      <div class="form-group">
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="addresses" value="39355 California Street #201, Fremont, CA, 94538 United States"> <strong>Nisum</strong> 39355 California Street #201, Fremont, CA, 94538 United States <a href="#">Edit</a>
+                          </label>
+                        </div>
 
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="addresses" value="500 S. Kraemer Blvd, Ste. 301, Brea, CA, 92821 United States"> <strong>Nisum</strong> 500 S. Kraemer Blvd, Ste. 301, Brea, CA, 92821 United States <a href="#">Edit</a>
+                          </label>
+                        </div>
+
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="addresses" value="71 Stevensen St, Ste. 446
+    San Francisco, CA, 94105 United States"> <strong>Nisum</strong> 71 Stevensen St, Ste. 446
+                            San Francisco, CA, 94105 United States <a href="#">Edit</a>
+                          </label>
+                        </div>
+                      </div>
+
+                      <span class="glyphicon glyphicon-plus gray"></span> <a class="small" href="#">Add a new address</a>
+                    </form>
+                  </div>
+                  <div class="panel-footer">
+                    <button class="btn btn-primary">Choose this address.</button>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default" id="panel2">
+                <div class="panel-heading">
+                  <div class="row">
+                    <div class="h5 col-md-3"><strong>2 &nbsp&nbsp Payment method</strong></div>
+                    <div class="col-md-6">
+                      <strong>Visa</strong> ending in XXXX<br>
+                      <a href="#">Billing address</a>: Same as shipping address.<br>
+                    </div>
+                    <div class="col-md-3 text-right">
+                      <a data-toggle="collapse" data-target="#collapseTwo" href="#collapseTwo" class="collapsed">
+                        <small>Change</small>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <div class="row header-row">
+                      <div class="col-md-6"><span class="h4">Your credit/debit cards</span></div>
+                      <div class="col-md-3">Name on card</span></div>
+                      <div class="col-md-3">Expiration Date</span></div>
+                    </div>
+                    <div class="row card-row">
+                      <div class="col-md-6"><input type="radio" name="#" value="#" checked>Visa ending in XXXX</div>
+                      <div class="col-md-3">John Doe</span></div>
+                      <div class="col-md-3">04/2022</span></div>
+                    </div>
+                    <div class="row card-row">
+                      <div class="col-md-6"><input type="radio" name="#" value="#">Visa ending in XXXX</div>
+                      <div class="col-md-3">John Doe</span></div>
+                      <div class="col-md-3">04/2022</span></div>
+                    </div>
+                    <div class="row card-row">
+                      <div class="col-md-6"><input type="radio" name="#" value="#">Visa ending in XXXX</div>
+                      <div class="col-md-3">John Doe</span></div>
+                      <div class="col-md-3">04/2022</span></div>
+                    </div>
+                    <!-- <ul>
+                      <li>Culpa mollit culpa anim qui aliqua do.</li>
+                      <li>Duis laboris enim dolore esse consequat commodo ad et eu tempor.</li>
+                      <li>Labore officia veniam elit laboris deserunt qui veniam nisi.</li>
+                    </ul> -->
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default" id="panel3">
+                <div class="panel-heading">
+                  <div class="row">
+                    <div class="h5 col-md-5"><strong>3 &nbsp&nbsp Review items and shipping</strong></div>
+                    <div class="col-md-7 text-right">
+                      <button data-toggle="collapse" data-target="#collapseThree" href="#collapseThree" class="collapsed">
+                        Review Order
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse in">
+                  <div class="panel-body">
+                    <p class="small"><strong class="delivery">Guaranteed delivery date: July 21, 2017</strong> If you order in the next 9 hours and 46 minutes (<a href="#">Details</a>)</p>
+                    <div class="row">
+                      <img class="col-md-1"></img>
+                      <div class="col-md-5"><span class="h6">Product name placeholder here</span></div>
+                      <div class="col-md-6"><span class="h6">Choose delivery option below:</span></div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="panel panel-default">
-
-                <div class="panel-body">
-                  <button class="btn btn-success button-order">Place your order</button>
-                  <p class="small text-center">By placing your order, you agree to Amazon's <a href="#">privacy notice</a> and <a href="#">conditions of use.</a></p>
-
-                  <table class="table">
-                    <tr class="borderless">
-                      <th>Order Summary</th>
-                    </tr>
-                    <tr class="borderless small">
-                      <td>Items:</td>
-                      <td class="text-right">$00.00</td>
-                    </tr>
-                    <tr class="borderless small">
-                      <td>Shipping & handling:</td>
-                      <td class="text-right">$00.00</td>
-                    </tr>
-                    <tr class="small">
-                      <td>Total before tax:</td>
-                      <td class="text-right">$00.00</td>
-                    </tr>
-                    <tr class="borderless small">
-                      <td>Estimated tax to be collected:*</td>
-                      <td class="text-right">$00.00</td>
-                    </tr>
-                    <tfoot>
-                    <tr class="text-important">
-                      <td>Order total:</td>
-                      <td class="text-right">$00.00</td>
-                    </tr>
-                    </tfoot>
-                  </table>
+          </div>
+          <div class="col-md-4">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <button class="btn btn-success button-order">Place your order</button>
+                <p class="small text-center">By placing your order, you agree to Nisum's <a href="#">privacy notice</a> and <a href="#">conditions of use.</a></p>
+                <table class="table">
+                  <tr class="borderless">
+                    <th>Order Summary</th>
+                  </tr>
+                  <tr class="borderless small">
+                    <td>Items:</td>
+                    <td class="text-right">$00.00</td>
+                  </tr>
+                  <tr class="borderless small">
+                    <td>Shipping & handling:</td>
+                    <td class="text-right">$00.00</td>
+                  </tr>
+                  <tr class="small">
+                    <td>Total before tax:</td>
+                    <td class="text-right">$00.00</td>
+                  </tr>
+                  <tr class="borderless small">
+                    <td>Estimated tax to be collected:*</td>
+                    <td class="text-right">$00.00</td>
+                  </tr>
+                  <tfoot>
+                  <tr class="table-order-total">
+                    <td>Order total:</td>
+                    <td class="text-right">$00.00</td>
+                  </tr>
+                  </tfoot>
+                </table>
                 </div>
                 <div class="panel-footer">
                   <a href="#" class="small">How are shipping costs calculated?</a>
                 </div>
-
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
