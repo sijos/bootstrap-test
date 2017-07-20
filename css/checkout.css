@@ -62,6 +62,10 @@ input[type=radio] {
   font-weight: 600;
 }
 
+.small-font {
+  font-size: 0.9em;
+}
+
 .delivery {
   font-size: 15px;
   color: forestgreen;
