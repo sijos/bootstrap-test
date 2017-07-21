@@ -9,17 +9,27 @@ h3, h4, h5, h6 {
 
 .navbar-default {
   background-color: lightgray;
+  padding: 0.5em;
+}
+
+.nav-flex-container {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .nav-logo {
   max-height: 50px;
 }
 
-.h1 {
-  text-align: center;
+.nav-title {
+  color: sandybrown;
+  font: 3em 'Officina Sans ITC Book', 'Times', sans-serif;
 }
 
-.topnav > *, .main-content {
+.main-content {
   margin-top: 10px;
 }
 
@@ -44,11 +54,6 @@ input[type=radio] {
   margin: 0;
   font-size: 15px;
 }
-
-.topnav > * {
-    margin-top: 10px;
-}
-
 
 .borderless td, .borderless th {
   border: none !important;
