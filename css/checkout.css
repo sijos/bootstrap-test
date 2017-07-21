@@ -57,7 +57,7 @@ input[type=radio] {
 }
 
 .text-important {
-  color: darkred;
+  color: #B12704;
   font-size: 1.2em;
   font-weight: 600;
 }
@@ -68,7 +68,7 @@ input[type=radio] {
 
 .delivery {
   font-size: 15px;
-  color: forestgreen;
+  color: #008a00;
 }
 
 .h6 {
