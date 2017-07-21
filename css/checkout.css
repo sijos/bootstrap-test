@@ -93,3 +93,7 @@ input[type=radio] {
   color: #008a00;
   font-size: 0.9em;
 }
+
+.shipping-label {
+  margin-left: 18px;
+}
