@@ -74,3 +74,8 @@ input[type=radio] {
 .h6 {
   font-weight: bold;
 }
+
+.ship-date {
+  color: #008a00;
+  font-size: 0.9em;
+}
