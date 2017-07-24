@@ -85,6 +85,10 @@ input[type=radio] {
   color: #008a00;
 }
 
+.delivery-img {
+  width: 2em;
+}
+
 .h6 {
   font-weight: bold;
 }
