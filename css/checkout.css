@@ -1,3 +1,12 @@
+html, body, header, nav, h1, a,
+ul, li, strong, main, button, i,
+section, img, div, h2, p, form,
+fieldset, label, input, textarea,
+span, article, footer, time, small,
+h3, h4, h5, h6 {
+  font-family: 'PT Sans', sans-serif;
+}
+
 .navbar-default {
   background-color: lightgray;
   padding: 0.5em;
@@ -62,7 +71,7 @@ input[type=radio] {
 }
 
 .text-important {
-  color: darkred;
+  color: #B12704;
   font-size: 1.2em;
   font-weight: 600;
 }
@@ -73,7 +82,7 @@ input[type=radio] {
 
 .delivery {
   font-size: 15px;
-  color: forestgreen;
+  color: #008a00;
 }
 
 .delivery-img {
@@ -84,8 +93,11 @@ input[type=radio] {
   font-weight: bold;
 }
 
-@media only screen and (max-width: 736px) {
-  .nav-flex-container {
-    flex-direction: column;
-  }
+.ship-date {
+  color: #008a00;
+  font-size: 0.9em;
+}
+
+.shipping-label {
+  margin-left: 18px;
 }

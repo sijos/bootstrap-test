@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="css/checkout.css" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
   </head>
 
   <body>
@@ -26,7 +27,7 @@
     <div class="container main-content">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-4 col-md-push-8">
+          <div class="col-md-4 col-xs-12 col-md-push-8">
             <div class="panel panel-default">
               <div class="panel-body">
                 <button class="btn btn-success button-order">Place your order</button>
@@ -64,7 +65,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-8 col-md-pull-4">
+          <div class="col-md-8 col-xs-12 col-md-pull-4">
             <div class="panel-group">
               <div class="panel panel-default" id="panel1">
                 <div class="panel-heading">
@@ -143,25 +144,22 @@
                       <div class="col-md-3">Expiration Date</span></div>
                     </div>
                     <div class="row card-row">
-                      <div class="col-md-6"><input type="radio" name="#" value="#" checked>Visa ending in XXXX</div>
+                      <div class="col-md-6"><input type="radio" name="cards" value="Visa ending in 1234" checked>Visa ending in 1234</div>
                       <div class="col-md-3">John Doe</span></div>
                       <div class="col-md-3">04/2022</span></div>
                     </div>
                     <div class="row card-row">
-                      <div class="col-md-6"><input type="radio" name="#" value="#">Visa ending in XXXX</div>
+                      <div class="col-md-6"><input type="radio" name="cards" value="Visa ending in 234">Visa ending in 2345</div>
                       <div class="col-md-3">John Doe</span></div>
                       <div class="col-md-3">04/2022</span></div>
                     </div>
                     <div class="row card-row">
-                      <div class="col-md-6"><input type="radio" name="#" value="#">Visa ending in XXXX</div>
+                      <div class="col-md-6"><input type="radio" name="cards" value="Amex ending in 3456">Amex ending in 3456</div>
                       <div class="col-md-3">John Doe</span></div>
                       <div class="col-md-3">04/2022</span></div>
                     </div>
-                    <!-- <ul>
-                      <li>Culpa mollit culpa anim qui aliqua do.</li>
-                      <li>Duis laboris enim dolore esse consequat commodo ad et eu tempor.</li>
-                      <li>Labore officia veniam elit laboris deserunt qui veniam nisi.</li>
-                    </ul> -->
+                    <br>
+                    <span class="glyphicon glyphicon-plus gray"></span> <a class="small" href="#">Add a new credit or debit card</a>
                   </div>
                 </div>
               </div>
@@ -180,7 +178,7 @@
                   <div class="panel-body">
                     <p class="small"><strong class="delivery">Guaranteed delivery date: July 21, 2017</strong> If you order in the next 9 hours and 46 minutes (<a href="#">Details</a>)</p>
                     <div class="row">
-                      <div class="col-sm-1 col-xs-3">
+                      <div class="col-md-1 col-sm-1 col-xs-6">
                         <img class="delivery-img" src="images/test_product.jpg"></img>
                       </div>
                       <div class="col-sm-5 col-xs-9">
@@ -194,10 +192,25 @@
                             <li><a href="#">1</a></li>
                             <li><a href="#">2</a></li>
                             <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">6</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Delete</a></li>
                           </ul>
                         </div>
                       </div>
-                      <div class="col-sm-6 col-xs-12"><span class="h6">Choose delivery option below:</span></div>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <span class="h6">Choose delivery option below:</span><br>
+                        <input type="radio" name="delivery" value="Friday, July 21" checked><strong class="ship-date">Friday, July 21</strong><br>
+                        <small class="shipping-label"><strong>One-Day Expedited Shipping</strong></small><br>
+                        <input type="radio" name="delivery" value="Saturday, July 22"><strong class="ship-date">Saturday, July 22</strong><br>
+                        <small class="shipping-label"><strong>Two-Day Expedited Shipping</strong></small><br>
+                        <input type="radio" name="delivery" value="4-5 business days"><strong class="ship-date">4-5 business days</strong><br>
+                        <small class="shipping-label"><strong>Standard Shipping</strong></small><br>
+                        <input type="radio" name="delivery" value="5+ business days"><strong class="ship-date">5+ business days</strong><br>
+                        <small class="shipping-label"><strong>No Rush Shipping</strong></small><br>
+                      </div>
                     </div>
                   </div>
                 </div>
