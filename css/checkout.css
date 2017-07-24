@@ -76,6 +76,16 @@ input[type=radio] {
   color: forestgreen;
 }
 
+.delivery-img {
+  width: 2em;
+}
+
 .h6 {
   font-weight: bold;
+}
+
+@media only screen and (max-width: 736px) {
+  .nav-flex-container {
+    flex-direction: column;
+  }
 }
